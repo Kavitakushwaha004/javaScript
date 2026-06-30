@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Data Types in JS  - There are 7 primitive data type in js
+
+//1. Number - It stores both integer or decimal values
+let age = 20;
+console.log(age)
+let price = 99.4;
+console.log(price)
+let a = NaN; // not a number 
+console.log(typeof(a));  // give number data type
+let b = Infinity
+console.log(typeof(b));
+
+ // 2. String  - stores character and words
+
+ let name = 'sakshi';
+ console.log(name);
+
+ console.log(name.length);
+ let city = " Jabalpur";
+ console.log(city);
+ let character = `a`;
+ console.log(character);
+ let msg = `Hello ,${name},from ${city} ${character}`;  // $ it help  to access actuall value 
+ console.log(msg);
+
+ // 3. null  - value intentionally empty rakhi gayi hai and its type of data is object
+
+ let c = null;
+ console.log(c);
+ console.log(typeof(c));  // object - it is famous bug in JS
+
+// 4. Undefined - variable hai per uski value assign nahi hai
+
+let user ;
+console.log(user);
+console.log(typeof(user));
+
+// 5.Boolean - it stores only True or False
+let isRunning=true;
+if(isRunning){
+    console.log("Rainy season");
+}else{
+    console.log("Not Rainy season");
+}
+
+// 6.Symbol - have unique Symbol even descrition are same
+const proof = Symbol("id");
+const proof1 = Symbol("id");
+console.log(proof);
+console.log(proof1);
+console.log(proof == proof1);
+console.log(proof === proof1);
+
+// 7.BigInt  - it stores large integer value
+let num = 7453859673625424506533689087644n
+//console.log(big);
+console.log(typeof num); 
+
+// outside block
+{
+  let blockVar = "inside block";
+  console.log(blockVar); // OK
+}
+ console.log(blockVar); // ERROR! aayegi kyuki ye block ke bahar hai
+
+    </script>
+</body>
+</html>
